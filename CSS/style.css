@@ -1,0 +1,168 @@
+ /* index:
+ 1-common Styles
+ 2- General Styles
+ 3- Sections:
+    3.0- Header Section.
+    3.1- Home Section.
+    3.2- About Section.
+    3.3- Portfolio Section.
+    3.4- Services Section.
+    3.5- Prices Section.
+    3.6- Team Section.
+    3.7- Blog Section.
+    3.8- Contact Section.
+    3.9- Footer Section
+  */
+ /* 1- common Styles  */
+/*  
+ - container
+ /* - overlay  */
+ .overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    background-color:rgba(0,0,0,0.5);
+}
+/*  
+ /* - opacity hover */
+ .hover-opacity{
+    transition: opacity .5s;
+}
+.hover-opacity:hover{
+    opacity:0.8;
+}
+/* 
+
+ /* 
+ -hover effect1(left to right)
+ -hover effect 2(top to bottom )
+*/
+.ltr-effect, .ttb-effect{
+    position:relative
+}
+.ltr-effect:after, .ttb-effect:after{
+    position:absolute;
+    content:"";
+    /* width:0; */
+    background:#333;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0; 
+    /* transition:width 0.5s; */
+    z-index: -1;
+}
+.ltr-effect:after{
+    width:0;
+    transition:width 0.5s;
+}
+.ttb-effect:after{
+    /* width:100%; */
+    height:0;
+    transition:height 0.5s;
+}
+.ltr-effect:hover:after{
+    width:100%;
+}
+.ttb-effect:hover:after{
+    height:100%;
+}
+/* ============================ */
+/*=== 2- General CSS styles ===*/
+/* -== section padding ==*/
+.pd-y{
+    padding:60px 0;
+} /* == ./section padding ==*/
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box; /* CSS3 */
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+.clear{
+    clear:both;
+}
+ h1, h2, h3, h4, h5, h6{
+     font-family: montserrat, sans-serif;
+ }
+ button{
+     font-family:inherit;
+ }
+ a{
+     text-decoration: none;
+ }
+ ul{
+    list-style: none;
+ }
+/* === section header === */
+.section-header{
+    text-align:center;
+    margin-bottom:20px;
+    /* background-color:chartreuse; */
+}
+ .section-header .section-title{
+     font-size:35px;
+     text-transform:capitalize;
+     margin-bottom: 10px;
+ }
+.section-header .line{
+    display:block;
+    height:5px;
+    width:70px;
+    margin: 10px auto 70px auto;
+    background-color: #6195ff;
+    
+}
+/* === ./section header === */
+.container{
+    width:80%;
+    margin:0px auto;
+    /* background-color:#8aaef7; */
+}
+/* ======= ./General CSS styles =============== */
+/*============== Section Styles =============*/
+/* =====3.0- Header Section ====== */
+
+/* ============================== */
+/* ===== 3.1- Home Section ======= */
+
+/* ============================ */
+
+/* ======= About Section ======== */
+/* ============================== */
+
+/* =============================== */
+/* ===== Portfolio Section ====== */
+
+/* =============================== */
+/* ======= Services Section ======= */
+
+/* =============================== */
+/* ======== numberSection ======== */
+
+/* ==================================== */
+/* ========= Prices Section ========= */
+
+/* ================================= */
+/* ====== Testimonial Section ======= */
+.blog-header{
+    background-color:#e8e8e8;
+    padding: 30px 0;
+}
+.head-title{
+    width:50%;
+    float:left;
+}
+.head-nav{
+    width:50%;
+    float:left;
+}
+.head-nav > li{
+    display:inline-block;
+}
+
+
